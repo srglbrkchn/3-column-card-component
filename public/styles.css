@@ -1,11 +1,19 @@
 body {
-    background-color: aquamarine;
+    font-size: 15px;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.frame {
+    margin: 10rem auto;
 }
 
 .attribution {
+    color: hsl(179, 100%, 13%);
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
 }
