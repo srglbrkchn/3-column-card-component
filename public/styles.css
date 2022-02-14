@@ -1,11 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 15px;
-    /* font-family: 'Big Shoulders Display', cursive; */
     font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .frame {
     margin: 10rem auto;
+}
+
+/* cards properties */
+.cards {
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 2rem;
+    width: 345px;
+}
+
+.card-heading {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-info {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.first-card {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+}
+
+.middle-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.last-card {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
 }
 
 .attribution {
