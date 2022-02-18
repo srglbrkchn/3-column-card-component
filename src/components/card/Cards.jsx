@@ -11,9 +11,9 @@ const Cards = () => {
 
     return (
         <div className="cards">
-            <FirstCard heading={sedans.brand} pic={sedans.pic} info={sedans.info}/>
-            <MiddleCard heading={suvs.brand} pic={suvs.pic} info={suvs.info}/>
-            <LastCard heading={luxury.brand} pic={luxury.pic} info={luxury.info}/>
+            <FirstCard heading={sedans.brand} pic={sedans.pic} info={sedans.info} cssClass={"first-btn"} />
+            <MiddleCard heading={suvs.brand} pic={suvs.pic} info={suvs.info} cssClass={"middle-btn"} />
+            <LastCard heading={luxury.brand} pic={luxury.pic} info={luxury.info} cssClass={"last-btn"}/>
         </div>
     );
 }

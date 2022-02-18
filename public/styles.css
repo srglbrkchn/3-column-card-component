@@ -18,23 +18,33 @@ body {
 .cards {
     margin: 10rem auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .card {
-    padding: 2rem;
-    width: 345px;
+    padding: 3rem;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
 .card-heading {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
     color: hsl(0, 0%, 95%);
 }
 
 .card-info {
     color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.9;
+    width: 90%;
+    margin-bottom: 3.5rem;
 }
 
 .first-card {
@@ -51,6 +61,39 @@ body {
     border-radius: 0 7px 7px 0;
 }
 
+.car-pic {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid  hsl(0, 0%, 95%);
+    padding: .8rem 1rem;
+    width: 9rem;
+    border-radius: 30px;
+    margin: 2rem 0 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: rgba(242, 242, 242, 0);
+    cursor: pointer;
+}
+
+.first-btn {
+    color:hsl(31, 77%, 52%);
+}
+
+.middle-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.last-btn {
+    color:hsl(179, 100%, 13%);
+}
+
 .attribution {
     color: hsl(179, 100%, 13%);
     font-size: 11px;
@@ -59,4 +102,26 @@ body {
 .attribution a {
     color: hsl(31, 77%, 52%);
     text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+
+    .frame {
+        margin: 0 auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 5rem auto ;
+    }
+
+    .first-card {
+        border-radius: 7px 7px 0 0 ;
+    }
+    
+    .last-card {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 7px 7px ;
+    }
 }
