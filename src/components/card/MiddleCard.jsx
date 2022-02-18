@@ -1,5 +1,4 @@
-import { props } from "bluebird";
-import Reacr from "react";
+import React from "react";
 import CardHeading from "./CardHeading";
 import CarPic from "./CarPic";
 import CardInfo from "./CardInfo";
